@@ -26,7 +26,7 @@ body::before {
       115deg,
       rgba(38, 58, 158, 0.8),
       rgba(136, 136, 206, 0.7)
-    ), url(https://images.unsplash.com/photo-1604695351790-b741237d039c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    ), url(./photo-1604695351790-b741237d039c.jpg);
 }
 body {
   font-size: 1.1rem;
@@ -41,32 +41,16 @@ body {
   width: 100%;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-
 
 form {
   background-color: hsla(174,90%,70%,0.3);
-  padding: 20px 50px;
-  margin: 50px 50px;
+  padding: 2rem 2.5rem;
+  margin: 3.5rem 1.5rem;
   border-radius: 20px;
   font-weight: 400;
   text-align: left; 
 }
-@media (min-width: 480px) {
-  form {
-    padding: 2.5rem;
-  }
-}
-}
+
 .form-group {
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
@@ -84,7 +68,6 @@ h1 {
 label {
   display: flex;
   align-items: center;
-   
 }
 
 .form-control {
@@ -124,7 +107,8 @@ label {
   border-radius: 2px;
   cursor: pointer;
   font-size: 1.2rem;
-  border:none; 
+  border:none;
+  margin: 1rem 0 
 }
 
 .submit-button:hover {
@@ -149,4 +133,21 @@ textarea {
   line-height: inherit;
 }
 
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0.25rem;
+  }
+  form {
+    font-size: 1rem;
+    padding: 1.25rem;
+    margin: 0.25rem;
+  }
 
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
